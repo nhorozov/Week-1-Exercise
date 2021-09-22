@@ -1,0 +1,39 @@
+---
+title: "Week 1 Exercise (part b)"
+author: "Nikolai Horozov"
+date: "9/20/2021"
+output:
+  html_document:
+    df_print: paged
+---
+
+Histogram of log-normal distribution with mu = 1 and sigma = 0.25
+```{r}
+set.seed(1)
+x <- rlnorm(100, 1, 0.25)
+
+hist(x, prob = TRUE)
+hist(log(x), prob = TRUE)
+```
+
+Mean and Variance of x
+```{r}
+set.seed(1)
+x <- rlnorm(100, 1, 0.25)
+
+mean(x)
+var(x)
+
+mean(log(x))
+var(log(x))
+```
+
+
+
+
+
+
+
+
+
+
